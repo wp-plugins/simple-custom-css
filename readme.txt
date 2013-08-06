@@ -22,6 +22,7 @@ An easy-to-use WordPress Plugin to add custom CSS styles that override Plugin an
 - No javascript files or complicated PHP requests
 - Generates no CSS files
 - Extremely lightweight (~5KB)
+- Thorough documentation
 
 == Installation ==
 
