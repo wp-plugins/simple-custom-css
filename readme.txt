@@ -23,8 +23,6 @@ An easy-to-use WordPress Plugin to add custom CSS styles that override Plugin an
 - Generates no CSS files
 - Extremely lightweight (~5KB)
 
-A few notes about the sections above:
-
 == Installation ==
 
 Install Simple Custom CSS just as you would any other WP Plugin:
@@ -37,7 +35,7 @@ Install Simple Custom CSS just as you would any other WP Plugin:
 
 4. Go to [Plugins Admin Panel](http://codex.wordpress.org/Administration_Panels#Plugins "Plugins Admin Panel") and find the newly uploaded Plugin, "Simple Custom CSS" in the list.
 
-5. Click Activate Plugin to activate it.
+5. Click "Activate Plugin" to activate it.
 
 [More help installing Plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
