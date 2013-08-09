@@ -1,7 +1,7 @@
 === Simple Custom CSS ===
 Contributors: johnregan3
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BAG2XC69ZYADQ
-Tags: css, styles, custom css, custom,
+Tags: css, styles, custom css, custom
 Requires at least: 3.0.1
 Tested up to: 3.6
 Stable tag: trunk
@@ -19,16 +19,16 @@ An easy-to-use WordPress Plugin to add custom CSS styles that override Plugin an
 - No configuration needed
 - Simple interface built on WordPress UI
 - Virtually no impact on site performance
-- No javascript files or complicated PHP requests
+- No JavaScript files or complicated database queries
 - Generates no CSS files
-- Extremely lightweight (~5KB)
+- Extremely lightweight (~7KB)
 - Thorough documentation
 
 == Installation ==
 
 Install Simple Custom CSS just as you would any other WP Plugin:
 
-1.  Download Simple Custom CSS from WordPress.org.
+1.  [Download Simple Custom CSS](http://wordpress.org/plugins/simple-custom-css "Simple Custom CSS") from WordPress.org.
 
 2.  Unzip the .zip file.
 
@@ -36,7 +36,7 @@ Install Simple Custom CSS just as you would any other WP Plugin:
 
 4. Go to [Plugins Admin Panel](http://codex.wordpress.org/Administration_Panels#Plugins "Plugins Admin Panel") and find the newly uploaded Plugin, "Simple Custom CSS" in the list.
 
-5. Click "Activate Plugin" to activate it.
+5. Click Activate Plugin to activate it.
 
 [More help installing Plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
@@ -80,9 +80,26 @@ Please check your CSS at the [W3C CSS Validation Service](http://jigsaw.w3.org/c
 
 == Changelog ==
 
+= 1.1 =
+* Removed unneeded hidden input
+* Added Action Hooks
+* Added cleanup on deletion
+* Added author attribution option
+* Added a more elegant method for adding CSS to the page:
+
+Instead of using print_scripts to insert the CSS directly into the HEAD, CSS styles are generated within simple-custom-css.php (the sole file for this plugin), then added via wp_enqueue_scripts, so now it will appear in the HEAD as:
+
+		<link rel="stylesheet" href="http://yoursite.com/?sccss=1" />
+
+...even though no css file is actually generated.  Please see the comments within the Plugin file for more detailed information.
+
 = 1.0 =
 * Inital Release
 
 == Upgrade Notice ==
 
-Initial Release
+= 1.1 =
+Changed method for inserting CSS, added support for cleanup on deletion, other minor changes.
+
+= 1.0 =
+Inital Release
