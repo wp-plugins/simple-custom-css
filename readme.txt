@@ -14,7 +14,7 @@ Add Custom CSS to your WordPress site without any hassles.
 
 An easy-to-use WordPress Plugin to add custom CSS styles that override Plugin and Theme default styles. This plugin is designed to meet the needs of administrators who would like to add their own CSS to their WordPress website.
 
-* Now Allows Double Quotes in CSS Selectors! *
+**Now Allows Double Quotes in CSS Selectors!**
 
 **Features**
 
